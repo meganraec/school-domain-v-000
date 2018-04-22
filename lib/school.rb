@@ -15,6 +15,6 @@ class School
     @roster[n]
   end
 
-  @school.sort ||= @school.sort_by {|grade, name| name}
-  
+  @school.sort ||= Hash[@school.sort_by {|grade, name| name}]
+
 end
