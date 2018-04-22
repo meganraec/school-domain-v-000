@@ -16,7 +16,7 @@ class School
   end
 
   def sort
-  @roster.sort_by {|k,v| k}.to_h
-  @roster.sort_by {|k,v| v}.to_h
+  @roster.sort_by {|k,v| k.to_s}.to_h
+  # @roster.sort_by {|k,v| v}.to_h
   end
 end
