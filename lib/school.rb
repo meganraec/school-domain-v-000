@@ -17,7 +17,5 @@ class School
 
   def sort
     @roster.each_value(&:sort!)
-  # a = @roster.sort_by {|k,v| k.to_s}
-  # a.sort_by {|k,v| v}.to_h
   end
 end
