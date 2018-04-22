@@ -15,6 +15,6 @@ class School
     @roster[n]
   end
 
-  @roster.sort ||= @roster.sort_by {|grade, name| name}.to_h
+  @roster.sort ||= @roster.sort_by {|grade, names| names}.to_h
 
 end
